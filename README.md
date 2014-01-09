@@ -14,10 +14,10 @@ The code snippets on the 3rd slide of the example are fully editable and have a 
 
 ## High-level Todo's
 
-[] Panel for navigating multi-talk workshops
-[] Inline tests for attendees to participate in
-[] Slide sync
-[] Export
+- [ ] Panel for navigating multi-talk workshops
+- [ ] Inline tests for attendees to participate in
+- [ ] Slide sync
+- [ ] Export
 
 ## Structure of a Plugin
 
