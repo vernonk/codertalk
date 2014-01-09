@@ -1,0 +1,25 @@
+.notify-panel {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em 0.75em;
+  background: #333;
+  display: none;
+}
+
+.notify-panel.has-messages {
+  display: block;
+}
+
+.notify-panel .msg {
+/*   background: #f1f1f1; */
+/*   border-radius: 5px; */
+  box-sizing: border-box;
+  padding: 0.25em 0.5em;
+  margin-bottom: 0.5em;
+/*   border: 1px solid #ccc; */
+  font-family: monospace;
+  color: #f1f1f1;
+  border-bottom: 1px solid #555;
+}

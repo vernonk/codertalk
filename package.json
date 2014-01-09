@@ -1,0 +1,28 @@
+{
+  "name": "codertalk",
+  "version": "0.0.0",
+  "author": "Vernon Kesner <vernonkesner@gmail.com>",
+  "description": "A tool for technical presenters, focused towards a workshop atmosphere but easily used for individual talks.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vernonk/codertalk.git"
+  },
+  "keywords": [
+    "presentation",
+    "presenter",
+    "server",
+    "cli"
+  ],
+  "dependencies": {
+    "cli": "0.4.5",
+    "express": "3.4.6",
+    "lodash": "2.4.0",
+    "marked": "0.2.10",
+    "shelljs": "0.2.6",
+    "underscore.string": "2.3.3"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.22"
+  }
+}

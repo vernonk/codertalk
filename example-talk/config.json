@@ -1,0 +1,17 @@
+{
+  "title": "Workshop title",
+  "speakers": [
+    "Vernon Kesner"
+  ],
+  "assets": "path/from/content/root/to/talk/assets",
+  "sections": {
+    "day1": [
+      "example-talk/content.md",
+      "example-talk/content2.md"
+    ],
+    "day2": [
+      "example-talk/content.md",
+      "example-talk/content2.md"
+    ]
+  }
+}
