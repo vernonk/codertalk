@@ -13,12 +13,7 @@ define([
           talks,
           talk,
           talkName;
-      // get off of config whether it's on server or built?
-      // that way if it's built we know the read should pull from variable
-      // on the page, otherwise we can send a quick request off to the api
-      // and pull back the content. Then we can use that same api request
-      // in the build task to pull back and create the object necessary
-      // to display particular pieces of content.
+
       if ( method === "read" ) {
 
         talks = CoderTalk.config.sections[ CoderTalk.current.section ];
