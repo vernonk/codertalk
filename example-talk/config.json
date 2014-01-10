@@ -7,11 +7,12 @@
   "sections": {
     "day1": [
       "example-talk/content.md",
-      "example-talk/content2.md"
+      "example-talk/basic-content.md",
+      "example-talk/basic-content.md"
     ],
     "day2": [
       "example-talk/content.md",
-      "example-talk/content2.md"
+      "example-talk/basic-content.md"
     ]
   }
 }
