@@ -16,9 +16,9 @@ For multi-session workshops, there's a panel that can be brought up to select fr
 
 ## High-level Todo's
 
-[] Inline tests for attendees to participate in
-[] Slide sync
-[] Export
+- [ ] Inline tests for attendees to participate in
+- [ ] Slide sync
+- [ ] Export
 
 ## Structure of a Plugin
 
