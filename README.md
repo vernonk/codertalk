@@ -12,9 +12,10 @@ Once that's done, hop over to [http://localhost:4242](http://localhost:4242). Yo
 
 The code snippets on the 3rd slide of the example are fully editable and have a preview panel to the right that will automatically update. This update is debounced to prevent constant updating and will only update 750ms after the final keypress in an editor pane.
 
+For multi-session workshops, there's a panel that can be brought up to select from which session you would like to use. The panel can be shown and hidden using `Option/Alt+Up`. With the panel shown, you can select sessions using `Option/Alt+Left` or `Option/Alt+Right` and then select by pressing `Enter` on your desired session. You can also simply click on the session with your mouse if you'd like.
+
 ## High-level Todo's
 
-[] Panel for navigating multi-talk workshops
 [] Inline tests for attendees to participate in
 [] Slide sync
 [] Export
