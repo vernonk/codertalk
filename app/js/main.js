@@ -66,13 +66,13 @@ require([
   // Set up some observers
   observers.initialize();
 
-  // Get our panel setup
+  // Start watching history
+  Backbone.history.start();
+
+  // Get our panel setup (must occur after Backbone.history.start())
   CoderTalk.collections.panel = new Panel();
   CoderTalk.views.panel = new PanelView({ collection: CoderTalk.collections.panel });
   CoderTalk.collections.panel.fetch({ reset: true });
-
-  // Start watching history
-  Backbone.history.start();
 
   // Get the current talk config
   CoderTalk.models.talkConfig = new TalkConfig();
