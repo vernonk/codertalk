@@ -1,3 +1,9 @@
+# 0.0.3
+
+## Bug Fix
+
+* Fixed: The session panel Collection was being created before `history` was started.
+
 # 0.0.2
 
 ## Features and Additions
