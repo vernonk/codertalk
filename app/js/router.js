@@ -13,9 +13,9 @@ define([
     main: function () {
       var baseURL;
       // set the current section & talk to first content from first session
-      CoderTalk.current.section = Object.keys( codertalkConfig.sections )[ 0 ];
+      CoderTalk.current.section = Object.keys( CoderTalk.config.sections )[ 0 ];
       CoderTalk.current.talk = 0;
-      baseURL = "/" + codertalkConfig.slugged_title + "/" + CoderTalk.current.section + "/" + CoderTalk.current.talk + "/0";
+      baseURL = "/" + CoderTalk.config.slugged_title + "/" + CoderTalk.current.section + "/" + CoderTalk.current.talk + "/0";
       CoderTalk.router.navigate( baseURL, { trigger: true } );
     },
 
@@ -23,7 +23,7 @@ define([
       // The object put on the page should have the scetion sluggified
       // already in the future. Otherwise, we can't do a comparison
       // make sure they're slugified from the start for now
-      if ( typeof codertalkConfig.sections[ section ] === "undefined" ) {
+      if ( typeof CoderTalk.config.sections[ section ] === "undefined" ) {
         CoderTalk.vent.trigger( "error:section", { type: "UNDEFINED", message: section + " is not a valid section from your config." } );
         return;
       }

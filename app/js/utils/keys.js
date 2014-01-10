@@ -17,48 +17,55 @@ define(function () {
         },
         nav = {
           left: function () {
-            vent.trigger( "keynav", {
+            vent.trigger( "keynav keynavleft", {
               navigate: true,
               direction: "backward",
-              identifier: "left"
+              identifier: "left",
+              event: e
             });
           },
           right: function () {
-            vent.trigger( "keynav", {
+            vent.trigger( "keynav keynavright", {
               navigate: true,
               direction: "forward",
-              identifier: "right"
+              identifier: "right",
+              event: e
             });
           },
           up: function () {
-            vent.trigger( "keynav", {
+            vent.trigger( "keynav keynavup", {
               navigate: false,
-              identifier: "up"
+              identifier: "up",
+              event: e
             });
           },
           down: function () {
-            vent.trigger( "keynav", {
+            vent.trigger( "keynav keynavdown", {
               navigate: false,
-              identifier: "down"
+              identifier: "down",
+              event: e
             });
           },
           enter: function () {
-            vent.trigger( "keynav", {
+            vent.trigger( "keynav keynaventer", {
               navigate: true,
               direction: "next",
-              identifier: "enter"
+              identifier: "enter",
+              event: e
             });
           },
           toggle: function () {
-            vent.trigger( "keynav", {
+            vent.trigger( "keynav keynavtoggle", {
               navigate: false,
-              identifier: "t"
+              identifier: "t",
+              event: e
             });
           },
           demo: function () {
-            vent.trigger( "keynav", {
+            vent.trigger( "keynav keynavdemo", {
               navigate: false,
-              identifier: "r"
+              identifier: "r",
+              event: e
             });
           }
         };

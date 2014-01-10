@@ -14,7 +14,7 @@ define([
   "codemirror-foldbrace",
   "codemirror-foldxml",
   "codemirror-foldcomment"
-], function ( _, $, Backbone, Slide ) {
+], function ( _, $, Backbone, SlideView ) {
 
   var Slides = Backbone.View.extend({
 
@@ -34,7 +34,7 @@ define([
     },
 
     addView: function ( model ) {
-      var slideView = new Slide({ model: model });
+      var slideView = new SlideView({ model: model });
       slideView.render();
       this.$el.append( slideView.el );
     },
@@ -104,7 +104,12 @@ define([
           currentSlide = this.currentSlide(),
           nextSlide = currentSlide + 1,
           prevSlide = currentSlide - 1,
-          baseURL = "/" + codertalkConfig.slugged_title + "/" + CoderTalk.current.section + "/" + CoderTalk.current.talk + "/";
+          baseURL = "/" + CoderTalk.config.slugged_title + "/" + CoderTalk.current.section + "/" + CoderTalk.current.talk + "/";
+
+      // only transition slides if panel isn't displayed
+      if ( $( ".section-panel.is-shown" ).length ) {
+        return false;
+      }
 
       if ( data.navigate ) {
         if ( data.direction === "forward" ) {

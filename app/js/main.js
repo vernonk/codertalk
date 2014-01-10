@@ -3,6 +3,7 @@ require.config({
     "jquery": "../bower_components/jquery/jquery.min",
     "backbone": "../bower_components/backbone/backbone-min",
     "lodash": "../bower_components/lodash/dist/lodash.min",
+    "_str": "../bower_components/underscore.string/dist/underscore.string.min",
     "text": "../bower_components/requirejs-text/text",
     "css": "../bower_components/require-css/css",
     "codemirror": "../bower_components/codemirror/lib/codemirror",
@@ -18,6 +19,9 @@ require.config({
     "codemirror-foldcomment": "../bower_components/codemirror/addon/fold/comment-fold"
   },
   shim: {
+    "_str": {
+      exports: "_.str"
+    },
     "backbone": {
       deps: [
         "lodash",
@@ -47,9 +51,11 @@ require([
   "app",
   "router",
   "models/talk-config",
+  "collections/panel",
+  "views/panel",
   "observers",
   "utils/keys"
-], function ( $, Backbone, App, Router, TalkConfig, observers, keyBindings ) {
+], function ( $, Backbone, App, Router, TalkConfig, Panel, PanelView, observers, keyBindings ) {
 
   CoderTalk = new App();
   CoderTalk.router = new Router();
@@ -59,6 +65,11 @@ require([
 
   // Set up some observers
   observers.initialize();
+
+  // Get our panel setup
+  CoderTalk.collections.panel = new Panel();
+  CoderTalk.views.panel = new PanelView({ collection: CoderTalk.collections.panel });
+  CoderTalk.collections.panel.fetch({ reset: true });
 
   // Start watching history
   Backbone.history.start();

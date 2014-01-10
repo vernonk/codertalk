@@ -14,7 +14,7 @@ define([
     sync: function ( method, model, options ) {
       if ( method === "read" ) {
         return $.ajax({
-          url: "/api/content/config/?path=" + codertalkConfig.sections[ CoderTalk.current.section ][ parseInt( CoderTalk.current.talk, 10 ) ]
+          url: "/api/content/config/?path=" + CoderTalk.config.sections[ CoderTalk.current.section ][ parseInt( CoderTalk.current.talk, 10 ) ]
         }).done( function ( data ) {
           if ( typeof options.success === "function" ) {
             options.success( data );

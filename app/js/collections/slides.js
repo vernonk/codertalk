@@ -16,7 +16,7 @@ define([
       // to display particular pieces of content.
       if ( method === "read" ) {
         return $.ajax({
-          url: "/api/content/?path=" + codertalkConfig.sections[ CoderTalk.current.section ][ parseInt( CoderTalk.current.talk, 10 ) ]
+          url: "/api/content/?path=" + CoderTalk.config.sections[ CoderTalk.current.section ][ parseInt( CoderTalk.current.talk, 10 ) ]
         }).done( function ( data ) {
           if ( typeof options.success === "function" ) {
             options.success( data );

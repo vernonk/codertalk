@@ -7,6 +7,7 @@ define([
 
   var App = function () {
     var hashPieces = document.location.hash.split( "/" );
+    this.config = codertalkConfig || {}; // not a fan of this
     this.collections = {};
     this.models = {};
     this.views = {};
