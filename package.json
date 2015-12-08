@@ -1,28 +1,49 @@
 {
   "name": "codertalk",
-  "version": "0.0.3",
-  "author": "Vernon Kesner <vernonkesner@gmail.com>",
-  "description": "A tool for technical presenters, focused towards a workshop atmosphere but easily used for individual talks.",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "chai": "^3.4.1",
+    "ejs": "~0.8.4",
+    "grunt": "0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-jst": "~0.6.0",
+    "grunt-contrib-less": "0.11.1",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sails-linker": "~0.9.5",
+    "grunt-sync": "~0.0.4",
+    "include-all": "~0.1.3",
+    "mocha": "^2.3.4",
+    "passport": "^0.3.2",
+    "passport-github": "^1.0.0",
+    "passport-google-oauth": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.3",
+    "rc": "~0.5.0",
+    "sails": "~0.11.3",
+    "sails-disk": "~0.10.0",
+    "sails-generate-auth": "^0.3.1",
+    "validator": "^4.4.0"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vernonk/codertalk.git"
+    "url": "git://github.com/vernonk/codertalk.git"
   },
-  "keywords": [
-    "presentation",
-    "presenter",
-    "server",
-    "cli"
-  ],
-  "dependencies": {
-    "cli": "0.4.5",
-    "express": "3.4.6",
-    "lodash": "2.4.0",
-    "marked": "0.2.10",
-    "shelljs": "0.2.6",
-    "underscore.string": "2.3.3"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=0.10.22"
+  "author": "Vernon Kesner",
+  "license": "",
+  "devDependencies": {
   }
 }
