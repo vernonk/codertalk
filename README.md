@@ -3,6 +3,8 @@ CoderTalk
 
 **Update: December, 2015:** CoderTalk is moving to a Sails.js powered application, and will be more robust with an online destination for all presenters to have an easy place to access presentations. There will still be an offline component, where you will not be required to have a connection to work on your talks.
 
+Sails branch: https://github.com/vernonk/codertalk/tree/sails
+
 ---
 
 CoderTalk is geared towards being a tool for technical presenters, with a focus on workshop type atmospheres (although it can be used for individual talks as well). Still a work in progress although it can be used for simple talks (live code demo for basic code is working). I'll work on putting a more clear README together as the tool gets closer to a more complete release.
